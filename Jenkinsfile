@@ -1,7 +1,22 @@
 pipeline {
     agent any 
     
+    options {
+        skipDefaultCheckout()
+    }
     stages{
+        stage('Checkout') {
+            steps {
+                script {
+                    checkout([$class: 'GitSCM',
+                              branches: [[name: '*/main']],
+                              userRemoteConfigs: [[url: 'https://github.com/acodenil/django-notes-app.git']],
+                              extensions: [[$class: 'PathRestriction', excludedRegions: 'README.md']],
+                              poll: true
+                            ])
+                }
+            }
+        }
         stage("Clone Code"){
             steps {
                 echo "Cloning the code"
