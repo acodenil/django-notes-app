@@ -90,3 +90,6 @@ goto     Dashboard/Manage Jenkins/Credentials/System/Global credentials (unrestr
 
 Add credentials for docker hub
 with id "dockerHub" (as I described this as credential id in Jenkinsfile)
+
+## Done
+http://public_ip:8000
