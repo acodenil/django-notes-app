@@ -22,10 +22,6 @@ sudo apt install docker-compose
 ```bash
 sudo usermod -aG docker $USER
 ```
-Now Reboot system
-```bash
-sudo reboot
-```
 
 ## Step 4: Jenkins Installation
 
@@ -54,6 +50,11 @@ Set Permission
 ```bash
 sudo usermod -aG docker jenkins
 ```
+Now Reboot system
+```bash
+sudo reboot
+```
+
 ## Step 5: EC2 configure
 
 Configure 8080 port for jenkins in inbound rules
