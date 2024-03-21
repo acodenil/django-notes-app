@@ -1,5 +1,5 @@
 
-# CI/CD Declarative pipeline for Django Notes App 
+# Automated CI/CD Pipeline for Django Web Application using AWS, Docker, and Jenkins 🌐🚀 
 
 This guide provides step-by-step instructions for creating  CI/CD Declarative pipeline for Django Notes App on an EC2 instance manually. The deployment process involves setting up Docker and Docker Compose, building Docker images, and configuring Jenkins for continuous integration.
 
