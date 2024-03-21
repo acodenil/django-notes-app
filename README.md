@@ -78,7 +78,7 @@ Select github project and provide repo address
 
 Select GitHub hook trigger for GITScm polling
 
-Select Pipeline script from SCM
+Select Pipeline script from SCM or you run pipeline script directly by writing code there
 
 Give repo
 
@@ -91,6 +91,13 @@ goto     Dashboard/Manage Jenkins/Credentials/System/Global credentials (unrestr
 
 Add credentials for docker hub
 with id "dockerHub" (as I described this as credential id in Jenkinsfile)
+
+## Step 7: Set up GITHUB WebHook(optional)
+
+Go to Github repo.
+Go to Settings/Webhooks.
+Create a webhook with url "<jenkins_ip_or_url>:8080/github-webhook/"
+It will trigger the jenkins build on your code commit.
 
 ## Done
 http://public_ip:8000
